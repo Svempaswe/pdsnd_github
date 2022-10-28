@@ -8,6 +8,8 @@ Bikeshare
 ### Description
 Present data about bike sharing in thee cities in US: Chicago, New York and Washington.
 
+This file was part of the Udacity training project.
+
 ### Files used
 bikeshare.py
 
