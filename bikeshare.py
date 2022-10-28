@@ -24,7 +24,7 @@ def get_filters():
         select_city = input("Enter the first character to select a city, C - Chicago, N - New Yourk or W - Washington: ").upper()
         if len(select_city) != 1:
             print()
-            print("Please try again and enter one letter to select a city")
+            print("You cannot enter ", select_city, "Please try again and enter one letter to select a city")
         elif select_city not in city_names:
             print()
             print("You must select C, N or W for Chicago, New York or Washington")
@@ -153,7 +153,9 @@ def trip_duration(df):
     
     trip_mean = math.trunc(round(df["Trip Duration"].mean(), 0))
     
-    return tot_time, trip_mean
+    trip_max = df["Trip Duration"].max()
+    
+    return tot_time, trip_mean, trip_max
 
 def user_info(df, city):
     
