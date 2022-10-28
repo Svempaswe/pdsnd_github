@@ -153,7 +153,9 @@ def trip_duration(df):
     
     trip_mean = math.trunc(round(df["Trip Duration"].mean(), 0))
     
-    return tot_time, trip_mean
+    trip_max = df["Trip Duration"].max()
+    
+    return tot_time, trip_mean, trip_max
 
 def user_info(df, city):
     
