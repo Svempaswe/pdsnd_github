@@ -13,6 +13,10 @@ This file was part of the Udacity training project.
 ### Files used
 bikeshare.py
 
+### Modules used
+pandas
+math
+
 ### data files used but not included in repo
 chicago.csv
 new_york_city.csv
